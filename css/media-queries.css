@@ -1,0 +1,144 @@
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 0;
+    }
+
+    .head-menu {
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .head-menu div {
+        display: flex;
+        width: 100%;
+        height: inherit;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-menu div a button{
+        padding: 0 .5em;
+    }
+
+    .head-menu div a img {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .head-menu div button {
+        display: block;
+        height: 100%;
+        width: auto;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        color: var(--color-font);
+    }
+
+    .head-menu ul {
+        display: none;
+        background-color: var(--backgroud-color);
+        height: fit-content;
+        width: 100%;
+    }
+
+    .head-menu ul.mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 65px;
+        background-color: var(--backgroud-color);
+    }
+
+    .head-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    .menu .menu-li {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .title {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    
+    .about-me, .projects-desc {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .home-p {
+        order: -1;
+        width: 90%;
+    }
+
+    .about-me--image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .about-me--image img {
+        width: 230px;
+        height: 230px;
+        display: none;
+    }
+
+    .home-image {
+        margin-right: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .contactF {
+        width: 81%;
+        padding: 30px;
+    }
+
+    .skill-tabs {
+        padding: 40px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    
+    .about-me--image img {
+        width: 190px;
+        height: 190px;
+    }
+    .skill-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-skills, .card-skills-soft {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
